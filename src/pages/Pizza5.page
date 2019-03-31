@@ -1,0 +1,28 @@
+<apex:page controller="WizardPizzaController">
+    <apex:form >
+        <apex:pageBlock title="Current Pizza Order:">
+            <apex:pageBlockSection columns="1">
+                <apex:outputPanel > 
+                    <apex:outputText value="Pizza Size: "></apex:outputText> 
+                    <apex:outputText value="{!pizzaOne}"></apex:outputText> 
+                </apex:outputPanel> 
+                <apex:outputPanel > 
+                    <apex:outputText value="Pizza Dough: "></apex:outputText> 
+                    <apex:outputText value="{!pizzaTwo}"></apex:outputText> 
+                </apex:outputPanel>
+                <apex:outputPanel > 
+                    <apex:outputText value="Pizza Cheese: "></apex:outputText> 
+                    <apex:outputText value="{!pizzaThree}"></apex:outputText> 
+                </apex:outputPanel>
+                <apex:outputPanel > 
+                    <apex:outputText value="Pizza Sauce Type: "></apex:outputText> 
+                    <apex:outputText value="{!pizzaFourA}"></apex:outputText> 
+                </apex:outputPanel>
+                <apex:outputPanel > 
+                    <apex:outputText value="Pizza Sauce Amount: "></apex:outputText> 
+                    <apex:outputText value="{!pizzaFourB}"></apex:outputText> 
+                </apex:outputPanel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

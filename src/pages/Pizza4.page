@@ -1,0 +1,22 @@
+<apex:page controller="WizardPizzaController">
+    <apex:form >
+    	<apex:pageBlock title="What kind of sauce would you like?">
+            <apex:pageBlockSection title="Type of Sauce:">
+                <apex:selectList size="1" value="{!pizzaFourA}">
+                    <apex:selectOptions value="{!sauceType}"></apex:selectOptions>
+                </apex:selectList><p/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Choose an Amount:">
+                <apex:selectRadio value="{!pizzaFourB}">
+                    <apex:selectOptions value="{!pizzaSauceAmount}"/>
+                </apex:selectRadio><p/>
+            </apex:pageBlockSection>
+            
+        	<apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!pageFourP}" value="Previous"/>
+            	<apex:commandButton action="{!pageFourN}" value="Next"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
